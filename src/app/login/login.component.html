@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        background-color: #AEAEAE;
+        font-family: Arial, sans-serif;
+      }
+      .login-container {
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        margin: 100px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+      }
+
+button {
+    background-color: #808080;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #525252;
+  }
+  h5{
+    background-color: #525252;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+  <br><br>
+  <header align="center">
+    <h5>Expense Tracker</h5>
+  </header>
+<div class="login-container">
+  
+  <h2 align="center">Login</h2>
+    <label for="email">Enter Email :-</label>
+    <input type="text"  [(ngModel)]="email" required><br><br>
+
+    <label for="password">Enter Password :-</label>
+    <input type="password" [(ngModel)]="password" required><br><br>
+
+    <button (click)="login()">Login</button><br><br>
+    <button routerLink="/forgotpassword">Forgot Password</button>   
+  
+</div>
+ </body>
+</html>

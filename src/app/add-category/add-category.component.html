@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Category</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #AEAEAEAE;
+			margin: 0;
+			padding: 0;
+            width: 500px;
+			margin: 0 auto;
+			border-radius: 5px;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-top: 30px;
+		}
+	
+		label {
+			display: block;
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		input[type="text"] {
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #666;
+		}
+        h3{
+    background-color: #525252;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+	</style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+	<h4 align="center">Add Category</h4>
+
+		<label for="category_name">Category Name</label>
+		<input type="text"  [(ngModel)]="addCat" placeholder="Enter category name">
+		<input (click)="addCategory()" type="submit" value="Add Category">
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3 align="center">Expense Tracker</h3>
+    <br><br><br>
+</body>
+</html>

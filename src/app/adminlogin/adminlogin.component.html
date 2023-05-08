@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: #C5C5C5;
+            width: 90%;
+			max-width: 500px;
+			margin: 3rem auto;
+			background-color: #C5C5C5;
+			border-radius: 10px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			padding: 2rem;
+		}
+		h3 {
+			text-align: center;
+			font-size: 2.5rem;
+			color: #333;
+			margin-top: 3rem;
+		}
+	
+		input[type="email"],
+		input[type="password"] {
+			width: 100%;
+			padding: 1rem;
+			margin-bottom: 1rem;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			font-size: 1.2rem;
+			color: #333;
+			background-color: #333;
+			outline: none;
+		}
+		input[type="submit"] {
+			background-color: #AEAEAEAE;
+			color: white;
+			padding: 1rem;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2rem;
+			cursor: pointer;
+			transition: background-color 0.2s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #;
+		}
+	</style>
+</head>
+<body>
+	<h3>Login Page</h3>
+		<label for="email">Email:</label>
+		<input type="email" id="email" [(ngModel)]="email" placeholder="Enter your email" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" [(ngModel)]="password" placeholder="Enter your password" required>
+		<input type="submit" value="Login">
+	
+</body>
+</html>
+

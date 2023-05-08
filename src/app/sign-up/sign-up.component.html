@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #AEAEAE;
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 450px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+    
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="tel"] {
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			width: 100%;
+		}
+		input[type="submit"] {
+			background-color: #525252;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #808080;
+		}
+		h5{
+    background-color: #525252;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+	</style>
+</head>
+<body>
+	<header align="center">
+		<h5>Expense Tracker</h5>
+	</header>
+	<br>
+    <h4 align="center">Sign Up</h4>
+		<label for="firstname">First Name:</label>
+		<input type="text" id="firstname" [(ngModel)]="firstname" required>
+
+		<label for="lastname">Last Name:</label>
+		<input type="text" id="lastname" [(ngModel)]="lastname" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" [(ngModel)]="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" [(ngModel)]="password" required>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" [(ngModel)]="phone" required>
+
+		<input type="submit" (click)="submit()" value="Sign Up">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a routerLink="/login">Login</a> 
+	
+</body>
+</html>
+
+
